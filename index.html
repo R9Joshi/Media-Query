@@ -1,0 +1,67 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<!-- 
+TODO: Change the background color for each device
+[lightsalmon] Mobile Devices: 319px — 480px
+[powderblue] iPads and Tablets: 481px — 1200px
+[limegreen] Laptops: 1201px — 1600px
+[seagreen] Desktops: 1601px and more
+-->
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1, minimum-scale=1" />
+  <title>Media Query</title>
+  <style>
+    body {
+      background-color: aquamarine;
+      font-family: serif;
+    }
+    @media (min-width: 319px) and (max-width: 480px){
+      body{
+        background-color: lightsalmon;
+      }
+      h1{
+        font-size: 1rem;
+        text-align: center;
+        border: 3px solid black;
+      }
+    }
+    @media(min-width: 481px) and (max-width: 1200px){
+      body{
+        background-color: powderblue;
+      }
+      h1{
+        font-size: 2rem;
+        text-align: center;
+        border: 6px solid black;
+      }
+    }
+    @media(min-width: 1201px) and (max-width: 1600px){
+      body{
+        background-color: limegreen;
+      }
+      h1{
+        font-size: 3rem;
+        text-align: center;
+        border: 9px solid black;
+      }
+    }
+    @media(min-width: 1601px){
+      body{
+        background-color: seagreen;
+      }
+      h1{
+        font-size: 4rem;
+        text-align: center;
+        border: 12px solid black;
+      }
+    }
+  </style>
+</head>
+
+<body>
+</body>
+  <h1>Please Check Responsiveness If You Can</h1>
+</html>
